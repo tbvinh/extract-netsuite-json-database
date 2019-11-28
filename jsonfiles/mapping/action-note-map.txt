@@ -1,0 +1,11 @@
+title:             {"table": "tbMemo", "fname": "title",    "ftype":"string"}
+noteDate:          {"table": "tbMemo", "fname": "noteDate", "ftype":"date"}
+note:              {"table": "tbMemo", "fname": "note",     "ftype":"string"}
+
+transaction:        {"table": "tbMessage", "fname": "", "ftype":""}
+transaction.internalId: {"table": "entity", "fname": "soID", "ftype":"string"}
+
+internalId:         {"table": "entity", "fname": "nsid", "ftype":"string"}
+
+author:             {"table": "tbMessage",  "fname": "",        "ftype":""}
+author.internalId:  {"table": "entity",     "fname": "emplId",  "ftype":"int"}

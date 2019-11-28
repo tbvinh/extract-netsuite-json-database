@@ -1,0 +1,18 @@
+author:             {"table": "tbMessage", "fname": "", "ftype":""}
+author.name:        {"table": "entity", "fname": "authorName", "ftype":"string"}
+authorEmail:        {"table": "entity", "fname": "authorEmail", "ftype":"string"}
+messageDate:        {"table": "entity", "fname": "messageDate", "ftype":"date"}
+
+transaction:        {"table": "tbMessage", "fname": "", "ftype":""}
+transaction.internalId: {"table": "entity", "fname": "soID", "ftype":"string"}
+
+internalId:         {"table": "entity", "fname": "nsid", "ftype":"string"}
+
+recipient:          {"table": "tbMessage", "fname": "", "ftype":""}
+recipient.name:     {"table": "tbMessage", "fname": "recipientName", "ftype":"string"}
+recipientEmail:     {"table": "tbMessage", "fname": "recipientEmail", "ftype":"string"}
+
+subject:            {"table": "entity", "fname": "subject", "ftype":"string"}
+message:            {"table": "entity", "fname": "message", "ftype":"string", "bExtractHtml": "true"}
+cc:                 {"table": "entity", "fname": "cc", "ftype":"string"}
+bcc:                {"table": "entity", "fname": "bcc", "ftype":"string"}

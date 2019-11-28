@@ -1,0 +1,92 @@
+autoNumberId:       {"table": "saleorder", "fname": "autoNumberId", "ftype":"int"}
+
+internalId:         {"table": "saleorder", "fname": "nsid", "ftype":"int"}
+tranDate:           {"table": "saleorder", "fname": "tranDate", "ftype":"date"}
+tranId:             {"table": "saleorder", "fname": "IDOrderFromOtherDomain", "ftype":"string"}
+createdDate:        {"table": "saleorder", "fname": "createdDate", "ftype":"date"}
+lastModifiedDate:   {"table": "saleorder", "fname": "modifiedDate", "ftype":"date"}
+salesEffectiveDate: {"table": "saleorder", "fname": "ProcessedDate", "ftype":"date"}
+
+email:              {"table": "saleorder", "fname": "email", "ftype":"string"}
+status:             {"table": "saleorder", "fname": "orderStatus", "ftype":"string"}
+status:             {"table": "saleorder", "fname": "status", "ftype":"string"}
+
+subTotal:           {"table": "saleorder", "fname": "subTotal", "ftype":"int"}
+taxTotal:           {"table": "saleorder", "fname": "taxTotal", "ftype":"int"}
+
+total:              {"table": "saleorder", "fname": "OrderTotal", "ftype":"int"}
+
+entity:             {"table": "entity", "fname": "", "ftype":""}
+entity.name:        {"table": "entity", "fname": "internalId", "ftype":"string", "splitItem": 0}
+
+location:             {"table": "warehouse", "fname": "", "ftype":""}
+location.internalId:  {"table": "warehouse", "fname": "internalId", "ftype":"int"}
+location.name:        {"table": "warehouse", "fname": "name", "ftype":"string"}
+
+discountItem: discountItem
+discountItem.internalId: discountItem.internalId
+discountItem.name: discountItem.name
+
+salesRep:             {"table": "salesRep", "fname": "",            "ftype":""   }
+salesRep.internalId:  {"table": "salesRep", "fname": "internalId",  "ftype":"int"}
+salesRep.name:        {"table": "salesRep", "fname": "name",        "ftype":"string"}
+
+partner:             {"table": "salesRep", "fname": "",            "ftype":""   }
+
+salesTeamList:                  {"table": "salesTeamList", "fname": "",            "ftype":""   }
+salesTeamList.internalId:       {"table": "salesTeamList", "fname": "internalId",  "ftype":"String"   }
+salesTeamList.name:             {"table": "salesTeamList", "fname": "name",        "ftype":"String"   }
+
+shipMethod:             {"table": "shipMethod", "fname": "",            "ftype":"", "pid":"parentid"}
+shipMethod.internalId:  {"table": "shipMethod", "fname": "internalId",  "ftype":"int"}
+shipMethod.name:        {"table": "shipMethod", "fname": "name",     "ftype":"string"}
+
+customFieldList:        {"table": "shipMethod", "fname": "",            "ftype":""}
+
+
+billingAddress:             {"table": "billingAddress", "fname": "",            "ftype":"", "pid":"parentid"}
+billingAddress.internalId:  {"table": "billingAddress", "fname": "internalId",  "ftype":"int"}
+billingAddress.country:     {"table": "billingAddress", "fname": "country",     "ftype":"string"}
+billingAddress.addr1:       {"table": "billingAddress", "fname": "addr1",       "ftype":"string"}
+billingAddress.addr2:       {"table": "billingAddress", "fname": "addr2",       "ftype":"string"}
+billingAddress.addr3:       {"table": "billingAddress", "fname": "addr3",       "ftype":"string"}
+billingAddress.addrText:    {"table": "billingAddress", "fname": "addrText",    "ftype":"string"}
+billingAddress.city:        {"table": "billingAddress", "fname": "city",     "ftype":"string"}
+billingAddress.state:       {"table": "billingAddress", "fname": "state",     "ftype":"string"}
+billingAddress.zip:         {"table": "billingAddress", "fname": "zip",     "ftype":"string"}
+
+shippingAddress: shippingAddress
+
+shippingAddress.internalId:  {"table": "shippingAddress", "fname": "internalId",  "ftype":"int"}
+shippingAddress.country:     {"table": "shippingAddress", "fname": "country",     "ftype":"string"}
+shippingAddress.addr1:       {"table": "shippingAddress", "fname": "addr1",     "ftype":"string"}
+shippingAddress.addr2:       {"table": "shippingAddress", "fname": "addr2",     "ftype":"string"}
+shippingAddress.addr3:       {"table": "shippingAddress", "fname": "addr3",     "ftype":"string"}
+shippingAddress.addrText:    {"table": "shippingAddress", "fname": "addrText",     "ftype":"string"}
+shippingAddress.city:        {"table": "shippingAddress", "fname": "city",     "ftype":"string"}
+shippingAddress.state:       {"table": "shippingAddress", "fname": "state",     "ftype":"string"}
+shippingAddress.zip:         {"table": "shippingAddress", "fname": "zip",     "ftype":"string"}
+
+subsidiary:                 subsidiary
+subsidiary.name:            subsidiary.name
+subsidiary.internalId:      subsidiary.internalId
+
+terms:  terms
+terms.name: terms.name
+
+itemList:   itemList
+
+itemList.item.quantity:         {"table": "tbOrderDetail", "fname": "quantity",     "ftype":"int"}
+itemList.item.amount:           {"table": "tbOrderDetail", "fname": "amount",       "ftype":"int"}
+itemList.item.rate:             {"table": "tbOrderDetail", "fname": "rate",     "ftype":"int"}
+
+itemList.item.lineUniqueKey:    {"table": "tbOrderDetail", "fname": "line",     "ftype":"int"}
+
+itemList.item.item.name:        {"table": "tbOrderDetail", "fname": "name",     "ftype":"string"}
+itemList.item.item.internalId:  {"table": "tbOrderDetail", "fname": "nsid",     "ftype":"int"}
+itemList.item.units.name:       {"table": "tbOrderDetail", "fname": "name",     "ftype":"string"}
+
+
+itemList.item.taxRate1:         {"table": "tbOrderDetail", "fname": "taxRate1",     "ftype":"string"}
+itemList.item.customFieldList: customFieldList
+itemList.item.customFieldList.value: {"table": "tbOrderDetail", "fname": "value",     "ftype":"int"}

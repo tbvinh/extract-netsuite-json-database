@@ -1,0 +1,13 @@
+
+internalId:         {"table": "tbUser", "fname": "nsid", "ftype":"string"}
+entityId:           {"table": "tbUser", "fname": "NameDisplay", "ftype":"string"}
+createdDate:        {"table": "tbUser", "fname": "createdDate", "ftype":"date"}
+email:              {"table": "tbUser", "fname": "email",       "ftype":"string"}
+mobilePhone:        {"table": "tbUser", "fname": "mobilePhone", "ftype":"string"}
+firstName:          {"table": "tbUser", "fname": "firstName",   "ftype":"string"}
+middleName:         {"table": "tbUser", "fname": "middleName",  "ftype":"string"}
+lastName:           {"table": "tbUser", "fname": "lastName",    "ftype":"string"}
+
+
+
+

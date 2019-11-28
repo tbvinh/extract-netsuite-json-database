@@ -1,0 +1,13 @@
+
+entityId:           {"table": "tbCustomer", "fname": "nsid", "ftype":"string"}
+createdDate:        {"table": "tbCustomer", "fname": "createdDate", "ftype":"date"}
+email:              {"table": "tbCustomer", "fname": "email",       "ftype":"string"}
+phone:              {"table": "tbCustomer", "fname": "BusinessPhone", "ftype":"string"}
+
+firstName:          {"table": "tbCustomer", "fname": "firstName", "ftype":"string"}
+lastName:           {"table": "tbCustomer", "fname": "lastname",  "ftype":"string"}
+
+addressbookList:    {"table": "tbCustomer", "fname": "StreetAddress", "ftype":"string"}
+
+
+
