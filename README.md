@@ -1,5 +1,5 @@
 # extract-netsuite-json-database
-Extract Netsuite data with the JSON exported from PHP-API
+Extract Netsuite data with the JSON exported from NETSUITE-API
 
 My company use Netsuite, then we want to discontinue using Netsuite.
 1. We extract all transactions, information such as customers and vendors into json
